@@ -16,7 +16,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li v-for="link in links" class="nav-item">
-              <a class="nav-link active" :href="link.url">{{link.txt}}</a>
+              <a 
+                class="nav-link active" 
+                :href="link.url"
+                :title="`This is ${link.txt} page`"
+              >
+                {{link.txt}}</a>
             </li>
           </ul>
         </div>
