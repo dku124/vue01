@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Basic</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"/>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="content">
+      <h1>{{pageTitle}}</h1>
+    <p>{{content}}</p>
+    </div>
+  </div>
+
+  <script>
+    Vue.createApp({
+      data() {
+        return {
+          pageTitle: "Hello, Vue",
+          content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+        }
+      },
+    }).mount('#content')
+  </script>
+</body>
+</html>
